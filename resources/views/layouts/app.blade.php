@@ -41,7 +41,6 @@
         </div>
         <!-- Spinner End -->
 
-
         <!-- Navbar Start -->
         @include('layouts.navbar')
         <!-- Navbar End -->

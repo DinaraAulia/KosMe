@@ -8,3 +8,5 @@ use App\Http\Controllers\HomeController;
 Route::get('/user', function(){
     return view('pages.home');
 });
+
+Route::get('/search', [HomeController::class, 'search'])->name('kos.search');
