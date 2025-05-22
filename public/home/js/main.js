@@ -10,8 +10,8 @@
         }, 1);
     };
     spinner();
-    
-    
+
+
     // Initiate the wowjs
     new WOW().init();
 
@@ -24,8 +24,8 @@
             $('.nav-bar').removeClass('sticky-top');
         }
     });
-    
-    
+
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
@@ -75,6 +75,12 @@
                 items:2
             }
         }
+    });
+
+        // Navbar active state on click
+    $('.navbar-nav .nav-link').on('click', function () {
+        $('.navbar-nav .nav-link').removeClass('active');
+        $(this).addClass('active');
     });
     
 })(jQuery);

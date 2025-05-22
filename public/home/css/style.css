@@ -1,17 +1,9 @@
 /********** Template CSS **********/
 :root {
-    /* --primary: #00B98E;
+    --primary: #00B98E;
     --secondary: #FF6922;
     --light: #EFFDF5;
-    --dark: #0E2E50; */
-
-    --primary: #0A2647;
-    --secondary: #144272;
-    --accent: #2C74B3;
-    --background: #F1F6F9;
-    --text: #0F172A; 
-    /* --light: #EFFDF5;
-    --dark: #0E2E50; */
+    --dark: #0E2E50;
 }
 
 .back-to-top {
@@ -21,7 +13,6 @@
     bottom: 45px;
     z-index: 99;
 }
-
 
 /*** Spinner ***/
 #spinner {
@@ -36,7 +27,6 @@
     visibility: visible;
     opacity: 1;
 }
-
 
 /*** Button ***/
 .btn {
@@ -74,17 +64,17 @@
     border-radius: 50px;
 }
 
-
 /*** Navbar ***/
 .nav-bar {
-    position: relative;
-    margin-top: 45px;
+    position: sticky;
+    margin-top: 0;
     padding: 0 3rem;
     transition: .5s;
     z-index: 9999;
 }
 
 .nav-bar.sticky-top {
+    top: 0;
     position: sticky;
     padding: 0;
     z-index: 9999;
@@ -157,7 +147,7 @@
         opacity: 0;
         visibility: hidden;
         transition: .5s;
-        
+
     }
 
     .navbar .nav-item:hover .dropdown-menu {
@@ -167,7 +157,6 @@
         opacity: 1;
     }
 }
-
 
 /*** Header ***/
 @media (min-width: 992px) {
@@ -215,7 +204,6 @@
     color: #DDDDDD;
 }
 
-
 /*** Icon ***/
 .icon {
     padding: 15px;
@@ -246,86 +234,27 @@
     z-index: 1;
 }
 
-
-/*** Category ***/
-.cat-item div {
-    background: #FFFFFF;
-    border: 1px dashed rgba(0, 185, 142, .3);
-    transition: .5s;
+/* banner */
+.kos-banner {
+    background: url('/home/img/banner.png') center/cover no-repeat, var(--primary);
+    min-height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    margin-top: -75px;
+    z-index: 0;
+    padding: 100px 0;
 }
 
-.cat-item:hover div {
-    background: var(--primary);
-    border-color: transparent;
-}
-
-.cat-item div * {
-    transition: .5s;
-}
-
-.cat-item:hover div * {
-    color: #FFFFFF !important;
-}
-
-
-/*** Property List ***/
-.nav-pills .nav-item .btn {
-    color: var(--dark);
-}
-
-.nav-pills .nav-item .btn:hover,
-.nav-pills .nav-item .btn.active {
-    color: #FFFFFF;
-}
-
-.property-item {
-    box-shadow: 0 0 30px rgba(0, 0, 0, .08);
-}
-
-.property-item img {
-    transition: .5s;
-}
-
-.property-item:hover img {
-    transform: scale(1.1);
-}
-
-.property-item .border-top {
-    border-top: 1px dashed rgba(0, 185, 142, .3) !important;
-}
-
-.property-item .border-end {
-    border-right: 1px dashed rgba(0, 185, 142, .3) !important;
-}
-
-
-/*** Team ***/
-.team-item {
-    box-shadow: 0 0 30px rgba(0, 0, 0, .08);
-    transition: .5s;
-}
-
-.team-item .btn {
-    color: var(--primary);
-    background: #FFFFFF;
-    box-shadow: 0 0 30px rgba(0, 0, 0, .15);
-}
-
-.team-item .btn:hover {
-    color: #FFFFFF;
-    background: var(--primary);
-}
-
-.team-item:hover {
-    border-color: var(--secondary) !important;
-}
-
-.team-item:hover .bg-primary {
-    background: var(--secondary) !important;
-}
-
-.team-item:hover .bg-primary i {
-    color: var(--secondary) !important;
+@media (max-width: 768px) {
+    .kos-banner {
+        padding-top: 120px;
+        padding-bottom: 100px;
+    }
 }
 
 

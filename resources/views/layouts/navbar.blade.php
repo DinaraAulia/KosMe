@@ -12,12 +12,12 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto">
-                        <a href="#" class="nav-item nav-link active">Home</a>
-                        <a href="#" class="nav-item nav-link">List Kos</a>
-                        <a href="#" class="nav-item nav-link">About</a>
-                        <a href="#" class="nav-item nav-link">My Bookings</a>
+                        <a href="/user" class="nav-item nav-link {{ Request::is('user') ? 'active' : '' }}">Home</a>
+                        <a href="#searchkos" class="nav-item nav-link">Cari Kos?</a>
+                        <a href="#about" class="nav-item nav-link">About</a>
+                        <a href="/myBookings" class="nav-item nav-link {{ Request::is('myBookings') ? 'active' : '' }}">My Bookings</a>
                     </div>
-                    <a href="#" class="btn btn-primary px-3 d-none d-lg-flex">Login</a>
+                    <a href="/login" class="btn btn-primary px-3 d-none d-lg-flex">Login</a>
                 </div>
             </nav>
         </div>
