@@ -16,9 +16,9 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-white mb-4">Quick Links</h5>
-                        <a class="btn btn-link text-white-50" href="">List Kos</a>
-                        <a class="btn btn-link text-white-50" href="">About</a>
-                        <a class="btn btn-link text-white-50" href="">My Bookings</a>
+                        <a class="btn btn-link text-white-50" href="/semuaKos">List Kos</a>
+                        <a class="btn btn-link text-white-50" href="#about">About</a>
+                        <a class="btn btn-link text-white-50" href="/myBookings">My Bookings</a>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-white mb-4">Photo Gallery</h5>
@@ -45,7 +45,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-white mb-4">Newsletter</h5>
-                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                        <p>Kami menghargai setiap masukan. Laporkan masalah teknis atau kesalahan sistem melalui email di bawah.</p>
                         <div class="position-relative mx-auto" style="max-width: 400px;">
                             <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
                             <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
